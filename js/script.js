@@ -18,6 +18,8 @@ let prezzoAlKm = kmDaPercorrere * 0.21;
 
 let prezzoScontato = 0;
 
+
+
 // se l utente ha meno di 18 anni manda a schermo il prezzo scontato del 20%
 
 if (etaUtente < 18) {
@@ -26,7 +28,7 @@ if (etaUtente < 18) {
     
     prezzoScontato = prezzoAlKm - risultato;
     
-    prezzoScontato =`${prezzoScontato.toFixed(2)} Euro, prezzo scontato`;
+    prezzoScontato =`${prezzoScontato.toFixed(2)} Euro, prezzo scontato del 20%`;
     //---------------------------------------------------------
     
     // Stampa Console
@@ -42,7 +44,7 @@ if (etaUtente < 18) {
    
     prezzoScontato = prezzoAlKm - risultato;
    
-    prezzoScontato =`${prezzoScontato.toFixed(2)} Euro, prezzo scontato`;
+    prezzoScontato =`${prezzoScontato.toFixed(2)} Euro, prezzo scontato del 40%`;
     //----------------------------------------------------------------------
     
     // Stampa Console
