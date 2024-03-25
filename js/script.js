@@ -28,6 +28,7 @@ if (etaUtente < 18) {
 } else if (etaUtente > 65) {
     let risultato = prezzoAlKm * 0.4;
     prezzoScontato = prezzoAlKm - risultato;
+    prezzoScontato =`${prezzoScontato.toFixed(2)} Euro, prezzo scontato`;
     document.getElementById("sconto").innerHTML = prezzoScontato;
 } else {
     console.log("prezzo intero")
@@ -36,9 +37,9 @@ if (etaUtente < 18) {
 }
 
 
-console.log(prezzoAlKm);
+console.log(prezzoAlKm, "non soggetto a sconto");
 
-console.log(prezzoScontato);
+console.log(prezzoScontato, "soggetto a sconto");
 
 
     
