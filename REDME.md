@@ -14,18 +14,24 @@
      Se (L'utente ha un età inferiore ha 18 anni)
             risultato = prezzoTotale * 0.2 
             prezzo scontato = prezzoTotale - risultato
+            Stampa il prezzo scontato in HTML
      
      Altrimenti Se (L'utente ha più di 65 anni) 
             risultato = prezzoTotale * 0.4
             prezzo scontato = prezzoTotale - risultato
+            Stampa il prezzo sconatato in HTML
             
 
      Altrimenti              
             non viene applicato nessuno sconto
+            visualizza in Html il prezzo intero in HTML
     
     Adattamento
-    - [] Il prezzo finale deve essere adattato in forma umana
+    - [x] Il prezzo finale deve essere adattato in forma umana
+
+    
+        
 ---
 
 5. OUTPUT
-    - [] Stampiamo prezzo finale del biglietto
+    - [x] Stampiamo prezzo finale del biglietto

@@ -15,28 +15,39 @@ etaUtente = parseInt(etaUtente); // number
 // ESECUZIONE LOGICA
 
 let prezzoAlKm = kmDaPercorrere * 0.21;
-prezzoAlKm = prezzoAlKm.toFixed(2);
-let prezzoScontato = "";
 
-console.log(prezzoAlKm);
+let prezzoScontato = 0;
+
+
 
 if (etaUtente < 18) {
     let risultato = prezzoAlKm * 0.2;
     prezzoScontato = prezzoAlKm - risultato;
+    prezzoScontato =`${prezzoScontato.toFixed(2)} Euro, prezzo scontato`;
+    document.getElementById("sconto").innerHTML = prezzoScontato;
 } else if (etaUtente > 65) {
     let risultato = prezzoAlKm * 0.4;
     prezzoScontato = prezzoAlKm - risultato;
+    document.getElementById("sconto").innerHTML = prezzoScontato;
 } else {
     console.log("prezzo intero")
+    prezzoAlKm =`${prezzoAlKm.toFixed(2)} Euro, prezzo intero`;
+    document.getElementById("intero").innerHTML = prezzoAlKm;
 }
 
-prezzoScontato =`${prezzoScontato.toFixed(2)} Euro`;
 
-console.log(prezzoScontato);
 
-//OUTPUT
 
-document.getElementById("sconto").innerHTML = prezzoScontato;
+console.log(prezzoAlKm);
+
+console.log("prezzoScontato", prezzoScontato);
+
+
+    
+
+
+
+
 
 
 
