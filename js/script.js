@@ -36,11 +36,9 @@ if (etaUtente < 18) {
 }
 
 
-
-
 console.log(prezzoAlKm);
 
-console.log("prezzoScontato", prezzoScontato);
+console.log(prezzoScontato);
 
 
     
