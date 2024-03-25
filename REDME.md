@@ -12,11 +12,11 @@
    - [x] calcoliamo il prezzo del biglietto in base ai Km da percorrere
     ---
      Se (L'utente ha un età inferiore ha 18 anni)
-            risultato = prezzoTotale * 20 / 100 
+            risultato = prezzoTotale * 0.2 
             prezzo scontato = prezzoTotale - risultato
      
      Altrimenti Se (L'utente ha più di 65 anni) 
-            risultato = prezzoTotale * 0.40  / 100
+            risultato = prezzoTotale * 0.4
             prezzo scontato = prezzoTotale - risultato
             
 
