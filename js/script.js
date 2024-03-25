@@ -21,25 +21,44 @@ let prezzoScontato = 0;
 
 
 if (etaUtente < 18) {
+    
     let risultato = prezzoAlKm * 0.2;
+    
     prezzoScontato = prezzoAlKm - risultato;
+    
     prezzoScontato =`${prezzoScontato.toFixed(2)} Euro, prezzo scontato`;
+    
+    console.log(prezzoScontato, "soggetto a sconto");
+   
     document.getElementById("sconto").innerHTML = prezzoScontato;
+
 } else if (etaUtente > 65) {
+   
     let risultato = prezzoAlKm * 0.4;
+   
     prezzoScontato = prezzoAlKm - risultato;
+   
     prezzoScontato =`${prezzoScontato.toFixed(2)} Euro, prezzo scontato`;
+    
+    console.log(prezzoScontato, "soggetto a sconto");
+    
     document.getElementById("sconto").innerHTML = prezzoScontato;
+
 } else {
+    
     console.log("prezzo intero")
+    
     prezzoAlKm =`${prezzoAlKm.toFixed(2)} Euro, prezzo intero`;
+    
+    console.log(prezzoAlKm, "non soggetto a sconto");
+    
     document.getElementById("intero").innerHTML = prezzoAlKm;
 }
 
 
-console.log(prezzoAlKm, "non soggetto a sconto");
 
-console.log(prezzoScontato, "soggetto a sconto");
+
+
 
 
     
